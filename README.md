@@ -357,6 +357,33 @@ This creates an optimized production build in the `dist/` folder.
 4. **User Simulation**: Instead of authentication, users can switch between accounts to test different perspectives
 5. **Real-time Updates**: All data refreshes after mutations to keep UI in sync
 
-## License
+## References
 
-This project is created for educational purposes as part of an engineering design assignment.
+1. Splitwise — Expense Sharing Application  
+   https://www.splitwise.com  
+   (Functional inspiration for group-based expense sharing and balance simplification)
+
+2. REST API Design Best Practices  
+   https://restfulapi.net/
+
+3. Node.js Official Documentation  
+   https://nodejs.org/en/docs/
+
+4. Express.js Documentation  
+   https://expressjs.com/
+
+5. PostgreSQL Official Documentation  
+   https://www.postgresql.org/docs/
+
+6. Supabase Documentation  
+   https://supabase.com/docs  
+   (PostgreSQL backend, Row Level Security, and API integration)
+
+7. React Documentation  
+   https://react.dev/
+
+8. TypeScript Handbook  
+   https://www.typescriptlang.org/docs/
+
+9. Tailwind CSS Documentation  
+   https://tailwindcss.com/docs
