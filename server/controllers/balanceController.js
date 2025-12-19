@@ -1,21 +1,16 @@
 import { supabase } from '../config/database.js';
 import { validate as isUUID } from 'uuid';
 
-/* =====================================================
-   GROUP BALANCES
-===================================================== */
 export const getGroupBalances = async (req, res) => {
   try {
     const { groupId } = req.params;
 
-    // 👇 ADD HERE
-    console.log('🔎 Group ID received:', groupId);
+    console.log(' Group ID received:', groupId);
 
     if (!isUUID(groupId)) {
       return res.status(400).json({ error: 'Invalid groupId' });
     }
 
-    // rest of your code...
 
     const { data: expenses, error: expensesError } = await supabase
       .from('expenses')
@@ -41,7 +36,6 @@ export const getGroupBalances = async (req, res) => {
 
     const balances = {};
 
-    // Expense contributions
     expenses.forEach(expense => {
       expense.expense_splits.forEach(split => {
         if (split.user_id !== expense.paid_by) {
@@ -51,13 +45,11 @@ export const getGroupBalances = async (req, res) => {
       });
     });
 
-    // Settlements
     settlements.forEach(settlement => {
       const key = `${settlement.paid_to}-${settlement.paid_by}`;
       balances[key] = (balances[key] || 0) - Number(settlement.amount);
     });
 
-    // Simplify balances
     const simplifiedBalances = [];
     const processed = new Set();
 
@@ -113,22 +105,15 @@ export const getGroupBalances = async (req, res) => {
   }
 };
 
-/* =====================================================
-   USER BALANCES
-===================================================== */
 export const getUserBalances = async (req, res) => {
   try {
     const { userId } = req.params;
 
-    // 👇 ADD HERE
     console.log('🔎 User ID received:', userId);
 
     if (!isUUID(userId)) {
       return res.status(400).json({ error: 'Invalid userId' });
     }
-
-    // rest of your code...
-
 
     const { data: memberships, error: membershipError } = await supabase
       .from('group_members')
