@@ -234,19 +234,19 @@ The frontend will be available at `http://localhost:5173` (or the URL shown in t
 ### 1. Create Users
 - First, create at least 2-3 users using the "Create New User" form
 - Each user needs a name and email address
-<img width="572" height="381" alt="image" src="https://github.com/user-attachments/assets/3e48d5ae-b076-441c-8aa9-941f3514e6c0" />
+<img width="530" height="246" alt="image" src="https://github.com/user-attachments/assets/3e48d5ae-b076-441c-8aa9-941f3514e6c0" />
 
 ### 2. Select a User
 - Use the "Current User" dropdown to select which user you're acting as
 - This simulates switching between different user accounts
-<img width="613" height="714" alt="image" src="https://github.com/user-attachments/assets/8dbc5c1d-3165-4585-bdea-d44fb6375350" />
+<img width="530" height="246" alt="image" src="https://github.com/user-attachments/assets/8dbc5c1d-3165-4585-bdea-d44fb6375350" />
 
 ### 3. Create a Group
 - With a user selected, create a group using the "Create New Group" form
 - Give it a name and optional description
 - Select which users should be members of the group
 - The creator is automatically added as a member
-<img width="563" height="893" alt="image" src="https://github.com/user-attachments/assets/c7f28937-f66d-43d1-afc6-45ff40fb1b81" />
+<img width="530" height="246" alt="image" src="https://github.com/user-attachments/assets/c7f28937-f66d-43d1-afc6-45ff40fb1b81" />
 
 ### 4. Add Expenses
 - Select a group from the "Your Groups" list
@@ -258,42 +258,42 @@ The frontend will be available at `http://localhost:5173` (or the URL shown in t
   - Split type (Equal, Exact, or Percentage)
   - Select members to split with
   - If using Exact or Percentage, enter the specific amounts/percentages
-<img width="1029" height="950" alt="image" src="https://github.com/user-attachments/assets/205aaff7-17d8-4718-8452-f6b605e8d5ca" />
-<img width="999" height="952" alt="image" src="https://github.com/user-attachments/assets/584ad14c-d074-492f-9353-95e1640f1330" />
+<img width="530" height="246" alt="image" src="https://github.com/user-attachments/assets/205aaff7-17d8-4718-8452-f6b605e8d5ca" />
+<img width="530" height="246" alt="image" src="https://github.com/user-attachments/assets/584ad14c-d074-492f-9353-95e1640f1330" />
 
 ### 5. View Balances
 - Click the "Balances" tab
 - **Group Balances**: Shows simplified balances between all group members
 - **Personal Balances**: Shows what you owe and what others owe you across all groups
-<img width="1514" height="966" alt="image" src="https://github.com/user-attachments/assets/26976864-aaf4-4a45-b8a2-43c03b6b755d" />
+<img width="530" height="246" alt="image" src="https://github.com/user-attachments/assets/26976864-aaf4-4a45-b8a2-43c03b6b755d" />
 
 ### 6. Settle Up
 - In the "Balances" tab, use the "Settle Up" form
 - Select who you're paying
 - Enter the amount
 - This records the payment and updates all balances automatically
-<img width="1505" height="731" alt="image" src="https://github.com/user-attachments/assets/64d85b91-f8d4-45fb-80b4-8bb69bc3a74c" />
-<img width="1518" height="737" alt="image" src="https://github.com/user-attachments/assets/bd9abb7e-f457-4fb3-b527-2f80a647f0fd" />
+<img width="530" height="246" alt="image" src="https://github.com/user-attachments/assets/64d85b91-f8d4-45fb-80b4-8bb69bc3a74c" />
+<img width="530" height="246" alt="image" src="https://github.com/user-attachments/assets/bd9abb7e-f457-4fb3-b527-2f80a647f0fd" />
 
 ## Understanding Split Types
 
 ### Equal Split
 Divides the total amount equally among selected members.
 - Example: $100 split equally among 4 people = $25 each
-<img width="1007" height="651" alt="image" src="https://github.com/user-attachments/assets/5e83321d-9a3f-4fad-8aa6-7457c0518010" />
+<img width="530" height="246" alt="image" src="https://github.com/user-attachments/assets/5e83321d-9a3f-4fad-8aa6-7457c0518010" />
 
 ### Exact Amount
 You specify exactly how much each person owes.
 - The sum of all amounts must equal the total expense
 - Example: $100 total - Person A owes $30, Person B owes $40, Person C owes $30
-<img width="1026" height="756" alt="image" src="https://github.com/user-attachments/assets/ef9d2e73-e98e-4ebe-aa99-e40ac0bf7393" />
-<img width="1005" height="731" alt="image" src="https://github.com/user-attachments/assets/b10aeab4-d395-4040-b7b1-eb58870b2145" />
+<img width="530" height="246" alt="image" src="https://github.com/user-attachments/assets/ef9d2e73-e98e-4ebe-aa99-e40ac0bf7393" />
+<img width="530" height="246" alt="image" src="https://github.com/user-attachments/assets/b10aeab4-d395-4040-b7b1-eb58870b2145" />
 
 ### Percentage Split
 You specify what percentage each person owes.
 - All percentages must add up to 100%
 - Example: $100 total - Person A 50%, Person B 30%, Person C 20%
-<img width="1033" height="770" alt="image" src="https://github.com/user-attachments/assets/61836075-5451-44a6-9630-838dac560e0b" />
+<img width="530" height="246" alt="image" src="https://github.com/user-attachments/assets/61836075-5451-44a6-9630-838dac560e0b" />
 
 ##🏗️ Balance Calculation Logic
 
