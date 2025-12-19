@@ -1,7 +1,13 @@
 #  💸 Expense Sharing Application
 
 A full-stack expense sharing application similar to Splitwise, built with React, TypeScript, Node.js, Express, and PostgreSQL (Supabase).
+---
 
+### 🎥 Demo Video
+
+[![Watch the QueueCTL Demo Video](https://img.https://www.youtube.com/watch?v=exHLggMdf2E/0.jpg)](https://www.youtube.com/watch?v=exHLggMdf2E)
+
+---
 ## ✨Features
 
 ### User Management
